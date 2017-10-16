@@ -20,10 +20,10 @@ From the command line, copy the .env .example to .env
 cp .env.example .env
 ```
 
-# Step 4: Installl packages (backend)
+# Step 4: Install packages (backend)
 `composer install`
 
-# Step 5: Installl packages (frontend)
+# Step 5: Install packages (frontend)
 `yarn install`
 
 # Step 6: Create sqlite database
