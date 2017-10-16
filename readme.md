@@ -2,13 +2,13 @@
 
 ## About MyFXApp
 
-This application is created to provide the ability to provide daily foreign exchange rates between a base currency and others.
+This application is created to provide the ability produce daily foreign exchange rates between a base currency and others.
 
 
 This initial version enables the admin user to create currencies and create exchange rates between the base currency and other currencies. In future these rates will be pulled from an Api
 
 # Step 1: install composer
-First thing you is installing composer on to your system. You can get composer [here](https://getcomposer.org/download/). Don't worry it might seem intimidating but its really not.
+First thing you need to do is installing composer on to your system. You can get composer [here](https://getcomposer.org/download/). Don't worry it might seem intimidating but its really not.
 
 # Step 2: clone the repository
 ```
