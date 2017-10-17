@@ -17,8 +17,8 @@ $factory->define(App\User::class, function (Faker $faker) {
     static $password;
 
     return [
-        'name' => 'Steve Popoola',
-        'email' => 'steve@steve.com',
+        'name' => 'John Admin',
+        'email' => 'admin@myfx.com',
         'password' => $password ?: $password = bcrypt('secret'),
         'remember_token' => str_random(10),
     ];
