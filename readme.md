@@ -49,4 +49,8 @@ To run the application, you can use the inbulit php server by running;
 `php artisan serve`
 This will enable you to navigate to http://localhost:8000
 
+Test Login Details
+email: admin@myfx.com
+password: secret
+
 
