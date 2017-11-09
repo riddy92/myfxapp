@@ -25,10 +25,22 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $rates = CurrencyRate::with(['currency' => function($query) {
+        $ratesToday = CurrencyRate::with(['currency' => function($query) {
             $query->where('is_base', 0);
         }])->where('date', '>', Carbon::now()->startOfDay())->get();
 
-        return view('home', compact('rates'));
+        $ratesPrevious = CurrencyRate::with(['currency' => function($query) {
+            $query->where('is_base', 0);
+        }])->where('date', '>', Carbon::now()->startOfDay()->subDays(3))
+            ->where('date', '<', Carbon::now()->startOfDay())->get()
+            ->sortByDesc('date')
+        ->groupBy(function($item) {
+            return $item->date->format('d-m-Y');
+        });
+
+        return view('home')->with([
+            'ratesToday' => $ratesToday,
+            'ratesPrevious' => $ratesPrevious
+        ]);
     }
 }

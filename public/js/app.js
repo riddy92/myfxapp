@@ -19038,6 +19038,8 @@ function confirmDelete(name) {
         }, function (isConfirm) {
             if (isConfirm) {
                 resolve();
+            } else {
+                reject();
             }
         });
     });
@@ -106295,6 +106297,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         getCurrencies: function getCurrencies() {
             var _this = this;
 
+            console.log('get currencies');
             axios.get('/admin/currencies').then(function (response) {
                 if (response.data.status === 'success') {
                     _this.currencies = response.data.currencies;
@@ -106332,6 +106335,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         Events.$on('currency-modal', function (currency) {
             _this2.currency = currency;
             _this2.show = true;
+        });
+
+        Events.$on('currency-deleted', function () {
+            console.log('event caught');
+            _this2.getCurrencies();
         });
     }
 });
@@ -106412,7 +106420,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     methods: {
         deleteCurrency: function deleteCurrency() {
-            Object(__WEBPACK_IMPORTED_MODULE_1__core_confirm_delete__["a" /* default */])('Currency ' + this.currency.name);
+            var _this = this;
+
+            Object(__WEBPACK_IMPORTED_MODULE_1__core_confirm_delete__["a" /* default */])('Currency ' + this.currency.name).then(function () {
+                __WEBPACK_IMPORTED_MODULE_0_axios___default.a.delete('/admin/currencies/delete/' + _this.currency.id).then(function () {
+                    Events.$emit('currency-deleted');
+                }).catch(function (error) {
+                    return console.log(error);
+                });
+            });
         },
         editCurrency: function editCurrency() {
             Events.$emit('currency-modal', this.currency);

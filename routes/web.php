@@ -26,11 +26,11 @@ Route::group(['middleware' => ['admin']], function() {
     Route::get('/admin/fx/currencies', 'Admin\CurrencyController@getExchangeCurrencies')->name('fx.currencies');
     Route::post('/admin/currencies', 'Admin\CurrencyController@create')->name('create.currency');
     Route::patch('/admin/currencies/{currency}', 'Admin\CurrencyController@update')->name('update.currency');
+    Route::delete('/admin/currencies/delete/{id}', 'Admin\CurrencyController@destroy')->name('delete.currency');
 
     // Currency Rates
     Route::get('/admin/rates', 'Admin\RatesController@getRates')->name('rates');
     Route::post('/admin/rates', 'Admin\RatesController@create')->name('create.rate');
     Route::patch('/admin/rates/{rate}', 'Admin\RatesController@update')->name('update.rate');
     Route::get('/admin/rates/history', 'Admin\RatesController@getRateHistory')->name('rates.history');
-
 });
