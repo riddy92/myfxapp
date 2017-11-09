@@ -9,7 +9,7 @@
                 <a href="#" @click.prevent="add">Add Currency</a>
             </span>
         </div>
-        <table class="table table-bordered">
+        <table class="dash-rates-table">
             <thead>
                 <tr>
                     <th>Name</th>

@@ -20,12 +20,14 @@
                 <div class="navbar-header">
 
                     <!-- Collapsed Hamburger -->
+                    @if (auth()->user() and auth()->user()->is_admin )
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
                         <span class="sr-only">Toggle Navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+                    @endif
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
@@ -36,7 +38,7 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="/">Home</a></li>
+                        
                         @if (auth()->user() and auth()->user()->is_admin )
                             <li><a href="{{ route('dashboard') }}">Admin</a></li>
                             <li><a href="{{ route('rates.history') }}">Daily Rates</a></li>
@@ -77,6 +79,11 @@
 
         @yield('content')
     </div>
+
+    <footer>
+    	<div>				
+			<p class="copyright"> &copy; 2017 justfx.me </p>
+    </footer>	
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>

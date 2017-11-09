@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
+    <div class="content-container">
+        <div class="content-row">
+            <div class="col">
+                <div class="rates-panel-body">
+                    <div class="rates-panel-heading">
                         Currency Rate History
                     </div>
-                    <div class="panel-body">
-                        <table class="table table-bordered">
+                    <div class="rates-panel-body">
+                        <table class="rates-table">
                             <thead>
                             <tr>
                                 <th>Date</th>

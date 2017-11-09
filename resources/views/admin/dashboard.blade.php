@@ -1,18 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="panel panel-default">
-                        <Currencies></Currencies>
-                    <div class="panel-body">
+    <div class="dash-container">
+        <div class="dash-row">
+            <div class="dash-col">
+                <div class="rates-panel-body">
+                        <Currencies>
+                        </Currencies>
+                    <div class="rates-panel-body">
 
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="panel panel-default">
+            <div class="dash-col">
+                <div class="rates-panel-body">
                         <Rates></Rates>
                     <div class="show-all text-center">
                         <a href="{{ route('rates.history') }}">Show history</a>

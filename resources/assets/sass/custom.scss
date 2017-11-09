@@ -1,0 +1,110 @@
+//tbody tr:nth-child(odd) {
+//	background-color: yellow;
+//}
+
+//tbody tr:nth-child(even) {
+//	background-color: green;
+//}
+
+html{
+	height: 100%;
+}
+
+body{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	max-width: 1440px;
+	margin:0 auto;
+}
+
+#app{
+	flex: 1;
+	position: relative;
+}
+
+.rates-table {
+	width: 100%;
+	table-layout: fixed;
+}
+
+.dash-rates-table {
+	width: 100%;
+	table-layout: fixed;
+}
+
+th {
+	padding:10px;
+	background-color: #30333F;
+}
+
+td {
+	padding:10px;
+}
+
+tr{
+	border: 1px #30333F solid;
+}
+
+.text_wrapper p{
+	color: gainsboro;
+}
+
+.rates-panel-heading{
+	padding: 10px;
+}
+
+.rates-panel-body {
+	border: 1px #30333F solid;
+}
+
+.login-panel-heading{
+	color: #3097D1;
+	text-align: center;
+	margin: 0 0 40px 0;
+}
+
+.login-panel-body {
+	color: #3097D1;
+}
+
+.content-row{
+	display:flex;
+	flex-direction: column;
+	padding:0 15px;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.col{
+	margin-bottom: 40px;
+}
+
+.dash-row{
+	display: flex;
+	flex-direction:column;
+	justify-content: space-evenly;
+	padding:0 15px;
+	color: #3097D1;
+}
+
+
+
+.dash-col {
+	max-width: 500px;
+	margin: 0 auto 40px auto;
+
+}
+
+footer {
+	padding: 0 15px;
+}
+
+.copyright{
+	color: grey;
+}
+
+@media (min-width:768px){
+	//
+}
+

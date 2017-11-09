@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Market rates as at {{ date('d/m/Y')}}</div>
+<div class="content-container">
+    <div class="content-row">
+        <div class="col">
+            <div class="rates-panel">
+                <div class="rates-panel-heading"> Naira(&#8358;) market rates {{ date('d/m/Y')}}</div>
 
-                <div class="panel-body">
+                <div class="rates-panel-body">
                      <div class="currency-table">
-                        <table class="table table-bordered">
+                        <table class="rates-table">
                             <thead>
                             <tr>
                                 <th>Currency</th>
@@ -29,9 +29,20 @@
                                 @endif
                             </tbody>
                         </table>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="col">
+            <div class = "text_wrapper">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in est tortor. Aliquam non libero ut mi rhoncus faucibus eu in eros. Aliquam interdum vulputate libero in tristique. Donec venenatis feugiat nunc mattis tempor. Ut laoreet, purus ac volutpat fermentum, eros quam luctus justo, cursus consectetur orci lorem eu purus. 
+                </p>
+            </div>
+        </div>
+
     </div>
 </div>
+
 @endsection
