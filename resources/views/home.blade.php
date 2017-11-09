@@ -36,7 +36,7 @@
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
 				<div class="panel-heading">Previous days rates</div>
-            
+
                 <div class="panel-body">
 					<div class="currency-table">
 						<table class="table table-bordered">
@@ -60,7 +60,7 @@
                                             <td>{{ $rate->sell_rate }}</td>
                                         </tr>
                                         @endforeach
-								    @endforeach 
+								    @endforeach
                                 @endif
 							</tbody>
 						</table>
