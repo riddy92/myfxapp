@@ -11,9 +11,11 @@ export default function confirmDelete(name) {
                 confirmButtonText: "Yes, delete!",
                 closeOnConfirm: true
             },
-            function (isConfirm) {
+            function(isConfirm) {
                 if (isConfirm) {
                     resolve();
+                } else {
+                    reject()
                 }
             })
     })

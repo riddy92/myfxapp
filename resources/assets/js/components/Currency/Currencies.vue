@@ -54,6 +54,7 @@
 
         methods: {
             getCurrencies() {
+                console.log('get currencies')
                 axios.get('/admin/currencies')
                     .then( response =>  {
                         if (response.data.status === 'success') {
@@ -92,6 +93,11 @@
             Events.$on('currency-modal', currency => {
                 this.currency = currency
                 this.show = true
+            })
+
+            Events.$on('currency-deleted', () => {
+                console.log('event caught')
+                this.getCurrencies()
             })
         }
     }

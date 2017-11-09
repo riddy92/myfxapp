@@ -18,9 +18,14 @@
 
         methods: {
             deleteCurrency() {
-                confirmDelete('Currency ' + this.currency.name)
+                confirmDelete('Currency ' + this.currency.name).then(() => {
+                    axios.delete(`/admin/currencies/delete/${this.currency.id}`)
+                        .then(() => {
+                            Events.$emit('currency-deleted')
+                            
+                        }).catch((error) => console.log(error))
+                    })
             },
-
             editCurrency() {
                 Events.$emit('currency-modal', this.currency)
             }

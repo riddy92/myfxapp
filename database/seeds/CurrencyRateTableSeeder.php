@@ -15,6 +15,25 @@ class CurrencyRateTableSeeder extends Seeder
     {
         $rates = [
             [
+                'date' => Carbon::now()->subDay(3),
+                'currency_id' => 2,
+                'buy_rate' => 361,
+                'sell_rate' => 366,
+            ],
+            [
+                'date' => Carbon::now()->subDay(3),
+                'currency_id' => 3,
+                'buy_rate' => 471,
+                'sell_rate' => 477
+            ],
+            [
+                'date' => Carbon::now()->subDay(3),
+                'currency_id' => 4,
+                'buy_rate' => 420,
+                'sell_rate' => 425,
+            ],
+
+            [
                 'date' => Carbon::now()->subDay(2),
                 'currency_id' => 2,
                 'buy_rate' => 364,
