@@ -5,7 +5,7 @@
     <div class="content-row">
         <div class="col">
             <div class="rates-panel">
-                <div class="rates-panel-heading"> Naira(&#8358;) market rates {{ date('d/m/Y')}}</div>
+                <div class="rates-panel-heading"> Naira(&#8358;) test market rates {{ date('d/m/Y')}}</div>
 
                 <div class="rates-panel-body">
                      <div class="currency-table">
