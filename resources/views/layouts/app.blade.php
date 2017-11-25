@@ -83,6 +83,7 @@
     <footer>
     	<div>				
 			<p class="copyright"> &copy; 2017 justfx.me </p>
+        </div>    
     </footer>	
 
     <!-- Scripts -->
