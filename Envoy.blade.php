@@ -1,7 +1,7 @@
 @servers(['web' => 'deploy@138.68.174.130'])
 
 @setup
-    $repo           = 'git@github.com/riddy92/myfxapp.git';
+    $repo            'git@github.com:riddy92/myfxapp.git';
     $base_dir       = '/www/www.justfx.me';
     $release_dir    = $base_dir . '/releases';
     $release        = date('YmdHis');
