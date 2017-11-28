@@ -7,7 +7,7 @@
                 <div class="rates-panel-body">
                         <Currencies>
                         </Currencies>
-                    <div>
+                    <div class="rates-panel-body">
 
                     </div>
                 </div>
