@@ -41,14 +41,14 @@
         </div>
 
     {{--  Rates for the last 3 days  --}}
-    <div class="row">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="panel panel-default">
-				<div class="panel-heading">Previous days rates</div>
+    <div class="content-row">
+		<div class="col">
+			<div class="rates-panel-body">
+				<div class="rates-panel-heading">Previous days rates</div>
 
-                <div class="panel-body">
+                <div class="rates-panel-body">
 					<div class="currency-table">
-						<table class="table table-bordered">
+						<table class="rates-table">
 							<thead>
 								<tr>
 									<th>Currency</th>
