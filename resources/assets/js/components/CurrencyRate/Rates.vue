@@ -1,7 +1,7 @@
 <template>
     <div class="currency-table">
         <notifications group="notify" />
-        <div class="panel-heading">
+        <div class="rates-panel-heading">
             Today's Rates
             <span class="pull-right">
                 <a href="#" @click.prevent="add">Add Rate</a>

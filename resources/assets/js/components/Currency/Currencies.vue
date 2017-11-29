@@ -3,7 +3,7 @@
 
         <notifications group="notify" />
 
-        <div class="panel-heading">
+        <div class="rates-panel-heading">
             Currencies
             <span class="pull-right">
                 <a href="#" @click.prevent="add">Add Currency</a>

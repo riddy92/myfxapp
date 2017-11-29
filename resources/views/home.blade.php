@@ -1,14 +1,14 @@
 
 @extends('layouts.app') @section('content')
-<div class="container">
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="panel panel-default">
-				<div class="panel-heading">Market rates as at {{ date('d/m/Y')}}</div>
+<div class="content-container">
+	<div class="content-row">
+		<div class="col">
+			<div class="rates-panel-body">
+				<div class="rates-panel-heading">Market rates as at {{ date('d/m/Y')}}</div>
 
-				<div class="panel-body">
+				<div class="rates-panel-body">
 					<div class="currency-table">
-						<table class="table table-bordered">
+						<table class="rates-table">
 							<thead>
 								<tr>
 									<th>Currency</th>
