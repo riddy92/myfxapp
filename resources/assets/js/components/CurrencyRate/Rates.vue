@@ -33,8 +33,8 @@
 </template>
 
 <script>
-    import RateRow from './RateRow.vue'
-    import RateModal from './RateModal.vue'
+    import RateRow from './RateRow'
+    import RateModal from './RateModal'
 
     export default {
         data() {
