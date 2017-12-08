@@ -17,13 +17,15 @@
 								</tr>
 							</thead>
 							<tbody>
-								@if ($ratesToday) @foreach($ratesToday as $rate )
-								<tr>
-									<td>{{ $rate->currency->short_name }}</td>
-									<td>{{ $rate->buy_rate }}</td>
-									<td>{{ $rate->sell_rate }}</td>
-								</tr>
-								@endforeach @endif
+								@if ($ratesToday) 
+									@foreach($ratesToday as $rate )
+										<tr>
+											<td>{{ $rate->currency->short_name }}</td>
+											<td>{{ $rate->buy_rate }}</td>
+											<td>{{ $rate->sell_rate }}</td>
+										</tr>
+									@endforeach 
+								@endif
 							</tbody>
 						</table>
 					</div>
