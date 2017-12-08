@@ -7,7 +7,7 @@
             <div class="modal-body">
                 <div class="form-group">
                     <label class="form-label">Date
-                        <el-date-picker
+                        <el-date-picker>
                             v-model="date"
                             type="date"
                             format="dd/MM/yyyy"
