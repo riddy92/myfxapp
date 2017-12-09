@@ -12,7 +12,7 @@
                             type="date"
                             format="dd/MM/yyyy"
                             placeholder="Pick date"
-                            :change="selectDate()">
+                            >
                         </el-date-picker>
                     </label>
                 </div>
@@ -122,6 +122,7 @@
 
             selectDate() {
                 this.rateObj.date = moment(this.date)
+                console.log(this.rateObj.date)
             },
 
             validate() {
