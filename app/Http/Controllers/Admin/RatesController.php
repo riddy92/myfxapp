@@ -18,7 +18,10 @@ class RatesController extends Controller
     {
         $rates = CurrencyRate::with(['currency' => function($query) {
             $query->where('is_base', 0);
-        }])->where('date', '>', Carbon::now()->startOfDay())->get();
+        }])->where('date', '=', Carbon::now()->startOfDay())
+            ->orWhere('date', '>', Carbon::now()->startOfDay())
+            ->get();
+
 
         return ['status' => 'success', 'rates' => $rates];
     }
