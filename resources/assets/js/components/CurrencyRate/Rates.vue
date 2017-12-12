@@ -13,6 +13,7 @@
                 <th>Currency</th>
                 <th>Buy</th>
                 <th>Sell</th>
+                
             </tr>
             </thead>
             <tbody v-if="rates.length">
