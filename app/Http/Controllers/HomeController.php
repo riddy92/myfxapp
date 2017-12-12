@@ -27,7 +27,8 @@ class HomeController extends Controller
     {
         $ratesToday = CurrencyRate::with(['currency' => function($query) {
             $query->where('is_base', 0);
-        }])->where('date', '>', Carbon::now()->startOfDay())->get();
+        }])->where('date', '=', Carbon::now()->startOfDay())
+            ->orWhere('date', '>', Carbon::now()->startOfDay())->get();
 
         $ratesPrevious = CurrencyRate::with(['currency' => function($query) {
             $query->where('is_base', 0);

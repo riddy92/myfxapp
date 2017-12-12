@@ -3,16 +3,16 @@
         <div class="modal-header">
             <h3>{{ modalTitle }} Rate</h3>
         </div>
+
         <form @submit.prevent="validate">
             <div class="modal-body">
                 <div class="form-group">
                     <label class="form-label">Date
-                        <el-date-picker>
-                            v-model="date"
-                            type="date"
-                            format="dd/MM/yyyy"
-                            placeholder="Pick date"
-                            :change="selectDate()">
+                        <el-date-picker
+                                v-model="date"
+                                type="date"
+                                format="dd/MM/yyyy"
+                                placeholder="Date">
                         </el-date-picker>
                     </label>
                 </div>
@@ -71,7 +71,7 @@
                 message: '',
                 status: '',
                 currencies: '',
-                date: moment()
+                date: ''
             }
         },
 
@@ -122,6 +122,7 @@
 
             selectDate() {
                 this.rateObj.date = moment(this.date)
+                console.log(this.rateObj.date)
             },
 
             validate() {
