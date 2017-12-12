@@ -18,7 +18,7 @@
 
         methods: {
             deleteCurrency() {
-                confirmDelete('Rate ' + this.rate.id)
+                confirmDelete('rate' + this.rate.id)
             },
 
             editCurrency() {
