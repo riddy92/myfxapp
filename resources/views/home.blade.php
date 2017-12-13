@@ -6,7 +6,7 @@
 			<div class="rates-panel-body">
 				<div class="rates-panel-heading"> Naira market rates as at {{ date('d/m/Y')}}</div>
 
-				<div class="rates-panel-body">
+				<div class="rates-body">
 					<div class="currency-table">
 						<table class="rates-table">
 							<thead>
@@ -34,7 +34,7 @@
 		</div>
 	</div>
 
-    <div class="col">
+    <div class="content-row">
             <div class = "text_wrapper">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in est tortor. Aliquam non libero ut mi rhoncus faucibus eu in eros. Aliquam interdum vulputate libero in tristique. Donec venenatis feugiat nunc mattis tempor. Ut laoreet, purus ac volutpat fermentum, eros quam luctus justo, cursus consectetur orci lorem eu purus. 
