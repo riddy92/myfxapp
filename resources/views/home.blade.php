@@ -48,7 +48,7 @@
 			<div class="rates-panel-body">
 				<div class="rates-panel-heading">Naira Previous days rates</div>
 
-                <div class="rates-panel-body">
+                <div class="rates-body">
 					<div class="currency-table">
 						<table class="rates-table">
 							<thead>
@@ -62,7 +62,7 @@
 								@if ($ratesPrevious)
                                     @foreach($ratesPrevious as $date => $rates )
                                         <tr>
-                                            <td colspan="3">{{ $date }}</td>
+                                            <td class="date-data"  colspan="3">{{ $date }}</td>
                                         </tr>
                                         @foreach ($rates as $rate)
                                         <tr>
