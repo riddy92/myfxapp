@@ -31,7 +31,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'JustFX') }}
+                        <img src="myfxapp/public/images/just_fx_logo.png" height="25" width="auto">
                     </a>
                 </div>
 

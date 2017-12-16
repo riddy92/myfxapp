@@ -4,7 +4,7 @@
 	<div class="content-row">
 		<div class="col">
 			<div class="rates-panel-body">
-				<div class="rates-panel-heading"> Naira market rates as at {{ date('d/m/Y')}}</div>
+				<div class="rates-panel-heading"> Naira (&#8358;) market rates {{ date('d/m/Y')}}</div>
 
 				<div class="rates-body">
 					<div class="currency-table">
@@ -46,7 +46,7 @@
     <div class="content-row">
 		<div class="col">
 			<div class="rates-panel-body">
-				<div class="rates-panel-heading">Naira Previous days rates</div>
+				<div class="rates-panel-heading">Naira (&#8358;) rates previous 3 days </div>
 
                 <div class="rates-body">
 					<div class="currency-table">
