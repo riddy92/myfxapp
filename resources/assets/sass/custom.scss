@@ -17,6 +17,11 @@ body{
 	position: relative;
 }
 
+.navbar_brand > img {
+	height:25px;
+	width:auto;
+}
+
 .rates-table {
 	width: 100%;
 	table-layout: fixed;
