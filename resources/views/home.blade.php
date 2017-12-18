@@ -37,7 +37,7 @@
     <div class="content-row">
             <div class = "text_wrapper">
                 <p>
-                    JustFX provides live Naira (&#8358;) parallel market rates. Accuracy of information is our number 1 priority. To contact us, please email info@justfx.me
+                    JustFX provides live Naira (&#8358;) parallel market rates. The accuracy of information is our number 1 priority. To contact us, please email info@justfx.me
                 </p>
             </div>
     </div>
