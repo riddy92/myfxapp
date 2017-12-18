@@ -37,7 +37,7 @@
     <div class="content-row">
             <div class = "text_wrapper">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in est tortor. Aliquam non libero ut mi rhoncus faucibus eu in eros. Aliquam interdum vulputate libero in tristique. Donec venenatis feugiat nunc mattis tempor. Ut laoreet, purus ac volutpat fermentum, eros quam luctus justo, cursus consectetur orci lorem eu purus. 
+                    JustFX provides live Naira (&#8358;) parallel market rates. Accuracy of information is our number 1 priority. To contact us, please email info@justfx.me
                 </p>
             </div>
     </div>
